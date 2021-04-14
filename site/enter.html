@@ -1,0 +1,170 @@
+<!doctype html>
+    <html lang="ru">
+        <head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>ВелоТойс-Главная</title>
+            <link rel="stylesheet" href="style/bootstrap-reboot.css">
+            <!-- <link rel="stylesheet" href="js/plagins/jquery-ui-1.12.1.custom/jquery-ui.min.css"> -->
+            <link rel="stylesheet" href="js/plagins/bxslider-4-4.2.12/bxslider-4-4.2.12/src/css/jquery.bxslider.css">
+            <link rel="stylesheet" href="js/plagins/jbcallme/css/jquery.jbcallme.css">
+            <link rel="stylesheet" href="style/main_style.css">
+            <link rel="stylesheet" href="style/slider.css">
+            <link rel="stylesheet" href="style/enter.css">
+            <link rel="stylesheet" href="style/main-adaptive.css">
+            <link rel="icon" href="assets/images/LOGO_1.ico" type="image/x-icon">
+            <link rel="stylesheet" href="style/modal.css">
+            <link rel="stylesheet" href="style/stylejs.css">
+           
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo" id="logo">
+                <a href="index.html"> <img src="assets/images/logo.png" alt="Логотип ВелоТойс"/></a>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li class="menu">
+                        <img class="burger_menu" onclick="menu()" src="assets/images/menu.png" alt="menu"/>
+                        <ul class="dropdown">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about_us.html">О нас</a></li>
+                            <li><a href="products.html">Наша продукция</a></li>
+                            <li><a href="news.html">Новости и Акции</a></li>
+                            <li><a href="sale.html">Как оформить заказ</a></li>
+                            <li><a href="delivery.html">Оплата и доставка</a></li>
+                        </ul>
+                    </li>
+                    <li class="basket">
+                        <a href="basket.html">
+                            <img src="assets/images/basket.png" alt="Корзина"/>
+                            <p>Корзина</p>
+                        </a>
+                    </li>
+                    <li class="compare">
+                        <a href="compare.html">
+                            <img src="assets/images/comparison.png" alt="Сравнение"/>
+                            <p>Сравнение</p>
+                        </a>
+                    </li>
+                    <li class="enter" id="enter" onclick="myModal.open()"> 
+                        <!-- <a href="enter.html" > -->
+                        <img src="assets/images/registration.png" alt="Вход"/>
+                        <p>Вход</p>
+                                          
+                        <!-- </a> -->
+                    </li>
+                </ul>
+                <div class="second_navigation">
+                    <form class="search">
+                        <input type="search" name="new_search" placeholder="Поиск">
+                        <input type="image" src="assets/images/find.png" name="lupa" alt="Поиск">
+                    </form>
+                    <div class="networks">
+                        <a href="viber://chat?number=+375298638811">
+                            <img src="assets/images/viber.png" alt="viber"/>
+                        </a>
+                        <a href="mailto:velotoys@gmail.com">
+                            <img src="assets/images/g+.png" alt="g+"/>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="assets/images/instagramm.png" alt="instagramm"/>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="connection">
+                <img class="call" src="assets/images/connection.png" alt="Обратная связь">
+                <a href="index.html">
+                    <p>На главную</p>
+                </a>
+                <div id="top"><a href="#"> Наверх</a></div>
+            </div>
+
+        </header>
+        <main >
+            <div class="regist">
+            <button class="individual" onclick="individ();">Частное лицо</button>
+            <button class="firm" onclick="firm();">Юридическое лицо</button>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="Логотип ВелоТойс"/></a>
+                </div>
+                <div class="footer_info">
+                    <div class="info">
+                        <a href="about_us.html"> 
+                            <h6>Информация</h6>
+                        </a>
+                        <p class="information">ООО «ВелоТойс» УНП 192673469, РБ, 220131, г. Минск, ул. Гамарника, д. 30, пом. 383
+                        </p>
+                    </div>
+                    <div class="contacts">
+                        <a href="about_us.html">
+                            <h6>Контакты</h6>
+                        </a>
+                        <p class="about_us">+375(29) 123-45-76 +375(44) 123-45-76 Время работы: 9.00 - 18.00
+                        </p>
+                    </div>
+                    <div class="products">
+                        <a href="products.html">
+                            <h6>Продукция</h6>
+                        </a>
+                        <ul class="product_list">
+                            <li>
+                                <a href="products.html">Беговелы</a>
+                            </li>
+                            <li>
+                                <a href="products.html">Трехколесные велосипеды</a>
+                            </li> 
+                            <li>
+                                <a href="products.html">Детские велосипеды </a>
+                            </li>
+                            <li>
+                                <a href="products.html">Подростковые велосипеды </a>
+                            </li>
+                            <li>
+                                <a href="products.html">Велошлемы </a>
+                            </li>
+                            <li>
+                                <a href="products.html">Аксессуары</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links">
+                        <h6>Полезные ссылки</h6>
+                        <ul class="links_list">
+                            <li>
+                                <a href="about_us.html">О нас</a>
+                            </li>
+                            <li>
+                                <a href="news.html"> Новости и Акции</a>
+                            </li>
+                            <li>
+                                <a href="articles.html">Статьи</a>
+                            </li>
+                            <li>
+                                <a href="sale.html"> Как оформить заказ</a>
+                            </li>
+                            <li>
+                                <a href="delivery.html"> Оплата и Доставка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2020  Все права защищены Разработчик Шуниборова Т.И.</p>
+            </div>
+        </footer>
+        
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+    <script src="js/plagins/jbcallme/js/jquery.jbcallme.min.js"></script> -->
+    <script src="js/index.js"></script> 
+    <!-- <script src="js/base.js"></script> -->
+    </body>
+</html>

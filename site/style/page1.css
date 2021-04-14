@@ -1,0 +1,115 @@
+.red_block, .red_block p, .product .red_block ,
+.black-box, .black_block {
+    align-items: center;
+    justify-content: center;
+}
+.red_block {
+    flex-direction: column;
+    text-align: center;
+}
+/* оформление кнопки */
+.red_block p {
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    padding-top: 0;
+    margin-top: 10px;
+}
+
+.advantages .black_block, .reports .black_block  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.advantages .black_block img, 
+.black_block a, .black_block p, 
+.box1, .box2, .box3, .box4, .box5  {
+    justify-self: center;
+    align-self: center;
+}
+.advantages .black_block img {
+    max-width: 40%;
+    margin: 10px 0 10px 0;
+}
+
+.advantages .black_block p {
+    margin-right: 50px;
+    justify-self: flex-start;
+}
+
+/* картинка  меньше по размеру  чем остальные */
+.advantages img:first-child{
+    max-width: 75%;
+}
+.reports .black_block img {
+    max-width: 100%;
+
+}
+.reports .black_block p {
+    margin-left: 10px;
+}
+.reports .black_block a:nth-child(3) {
+    grid-column: 2/3;
+}
+.reports .black_block a:last-child {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+.product .red_block,
+ .product .red_block img {
+    position: relative;
+}
+.black-box {
+    max-width: 100%;
+    max-height: 50%;
+    background-color: rgba(0,0,0,0.7);
+}
+.product .black-box img {
+    max-width: 90%;
+}
+.product .red_block h3 {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.product .red_block {
+    flex-direction: row;
+}
+
+.white_block { 
+    display: grid;
+    grid-template-areas:  "post-1 post-1 post-1 post-2 post-2"
+                          "post-1 post-1 post-1 post-3 post-3"
+                          "post-5 post-5 post-4 post-4 post-4";
+    grid-template-columns: repeat(5, calc(100%/5));
+    grid-template-rows: repeat(3, auto);
+    background-color: white;
+}
+.white_block img {
+    max-width: 100%;
+}
+.box1 {
+    grid-area: post-1;
+}
+.box2 {
+    grid-area: post-2; 
+}
+.box3 {
+    grid-area: post-3; 
+}
+.box5 {
+    grid-area: post-4; 
+}
+.box4 {
+    grid-area: post-5;
+} 
+/* red_box нужен только для адаптива */
+.red-box {
+    display: none;
+}
+
+
