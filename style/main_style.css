@@ -1,0 +1,197 @@
+body, main, header, nav, .navigation, .basket, .compare, .enter,
+ .basket a, .compare a, .enter a, .second_navigation, .connection, 
+ .advantages, .pictures, .networks, .radio_point, .black-box, 
+ .red_block, .black-block, .reports, .product, .bicycles, footer,
+ .foot, .footer_info, .search {
+    display: flex;
+}
+/* шрифт для наименований разделов */
+@font-face {
+    font-family: "Segoe Script";
+    src: url("../assets/font/16217.ttf")
+}
+body, .menu, main, nav, .black_block, .red_block,
+footer, .connection, .black_block div {
+    flex-direction: column;
+}
+body {
+    background-color: black;
+    background-image: url(../assets/images/background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font: 24px Arial, Helvetica, sans-serif;
+    max-width: 2010px;
+    line-height: 1.1em;
+    height:100vh;
+}
+.search, body, a:link, a:visited{
+    color: white;
+}
+
+a:active {
+    background-color: rgba(255,0,0, .5);
+}
+a:hover {
+    color: orangered; 
+}
+header, .foot {
+    margin: 20px 50px;
+}
+.navigation .second_navigation  {
+    flex-direction: row;
+}
+.navigation, .basket, .compare, .enter {
+    flex-wrap: nowrap;
+}
+header, .networks, .logo, footer, .menu, .basket, .compare, .enter, 
+.navigation, .second_navigation,.red_block, .black_block, .advantages,
+.reports, .products, footer .logo , .info, .contacts, .products, .links {
+    flex-grow: 1;
+}
+.connection {
+    position: fixed;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+}
+.connection, .search, .networks {
+   justify-content: center;
+    align-items: center; 
+}
+.connection p {
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.connection img {
+    max-width: 75px;
+}
+main {
+    flex-grow: 14;
+}
+nav, .footer_info {
+    flex-grow: 6;
+    margin-left: 40px;
+}
+.search {
+    flex-grow: 5;
+    background-color:  rgba(255, 255, 255, 0.3);
+}
+
+.search input[type="search"]  {
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding:0;
+    border: none;
+    outline: none;
+    background-color:  rgba(255, 255, 255, 0); 
+}
+input::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+input[type="image"] {
+    height: 50%; 
+    border: none; 
+}
+
+div.logo, .logo img  {
+    max-height: 150px;
+    max-width: 150px; 
+}
+div.logo{
+    background-color:  rgba(255, 255, 255, 0.5);  
+}
+nav img {
+    max-height: 50px;
+}
+.navigation img {
+    padding-right: 20px;
+}
+.networks img{
+    padding-right: 5px;
+}
+.networks{
+    margin: 0 0 0 10px ;
+}
+/* ul{
+    list-style-type: none;
+} */
+h1, h3 {
+    font-family: "Segoe Script", Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+h3 {
+    font-size: 1.7em;
+}
+.burger_menu {
+    cursor: pointer;
+}
+.burger_menu:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.menu {
+    position: relative;
+}
+.dropdown {
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+    min-width: 350px;
+    position: absolute;
+    z-index: 2;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+/* .menu:hover .dropdown, .dropdown a, .menu {
+    display: block;
+} */
+.dropdown a {
+    padding:  0 0 0 10px;
+}
+.red_block {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.black_block, .red_block, .white_block {
+    width: 50%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.copyright {
+    max-width: 100%;
+    text-align: center;
+    border-top: thin white solid;
+}
+.copyright p{
+    margin-top: 5px;
+}
+ul, p {
+    list-style-type: none;
+    padding: 10px 0 0 0;
+}
+/* стили футера */
+.info, .contacts, .products, .links {
+    max-width: calc(100%/4);
+    justify-content: space-between;
+}
+
+h6 {
+    padding-bottom: 10px;
+    border-bottom: thin white solid;
+    font-size: 1em;
+}
+footer p, footer li, .red_block p {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+footer .logo , .info, .contacts, .products, .links :not(:last-child) {
+    margin-right: 20px;
+}
+footer {
+    background-color: rgba(51,0,0,0.8);
+    bottom: 0;
+}
+
