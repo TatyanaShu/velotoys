@@ -1,0 +1,54 @@
+.fixed  {
+    position: fixed;
+    background-color: black;
+    background-image: url(../assets/images/background.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: flex;
+    z-index: 2;
+    margin: 0;
+    padding: 10px 50px 10px 240px;
+    top: 0;
+    left: 0px;
+    right: 0px;
+
+}
+body {
+    top:0;
+}
+.bx-wrapper {
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+.show {
+    display:block;
+    z-index: 10;
+}
+.jbCallme{
+    background-color: black;
+    border: 1px solid red;
+    color: white;
+}
+.jbCallme .jb_title {
+    font-family: 24px Arial, Helvetica, sans-serif;
+    color: white;
+    background:#ff2600;
+}
+.jbCallme input[type=submit] {
+    -webkit-box-shadow: inset 0px 1px 0px 0px #f9bebe; 
+    box-shadow: inset 0px 1px 0px 0px #f9bebe;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ee6c63), color-stop(1, #ff2600) );
+    border: 1px solid #a33838;
+}
+.jbCallme .jb_fail,
+.jbCallme .jb_success {
+    color: white;
+}
+.alert {
+    border-color: red;
+    background-color: pink;
+}
+span {
+    font-size: 12px;
+}

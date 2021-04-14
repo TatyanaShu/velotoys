@@ -1,0 +1,300 @@
+@media screen and (max-width: 1355px) {
+/* изменение  основной надписи и футера*/
+.name {
+    top: 4%;
+    line-height: 2em;
+}
+footer h6 {
+    line-height: 1em;
+}
+.info h6, .contacts h6, .products h6 {
+    padding-bottom: 35px;
+}
+#slide1:checked ~ .slides-arrow label:nth-child(2),
+    #slide2:checked ~ .slides-arrow label:nth-child(3),
+    #slide3:checked ~ .slides-arrow label:nth-child(1)  {
+    background-size: 75%;
+    }
+    #slide1:checked ~ .slides-arrow label:nth-child(3),
+    #slide2:checked ~ .slides-arrow label:nth-child(1),
+    #slide3:checked ~ .slides-arrow label:nth-child(2)  {
+    background-size: 75%;
+    }
+}
+@media screen and  (max-width: 1250px) {
+    /* изменение  основной надписи*/
+    .name {
+        font-size: 0.8em;
+    }
+       }
+@media screen and  (max-width: 1005px) {
+    body {
+        font-size: 20px;
+    }
+    .name {
+        font-size: 0.8em;
+    }
+    .info h6, .contacts h6, .products h6 {
+        padding-bottom: 30px;
+    }
+    .info, .contacts, .products, .links {
+        position: relative;
+    }
+    .info h6, .contacts h6, .products h6, .links h6 {
+        cursor: pointer;
+    }
+    .information, .about_us, .product_list, .links_list  {
+        display: none; 
+        background-color: rgba(0,0,0,0.8);
+        min-width: 180px;
+        max-width: 350px;
+        top: -10px;
+        position: absolute;
+        z-index: 2;
+        font-size: 1em;
+        line-height: 1.2em; 
+    }
+    .info:hover .information, .contacts:hover .about_us,
+    .products:hover .product_list, .links:hover .links_list{
+        display: block;
+    }
+    div.logo {
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .logo img {
+        max-height: 100px;
+        max-width: 100px; 
+    }
+    
+    nav img {
+        max-height: 40px;
+    }
+    #slide1:checked ~ .slides-arrow label:nth-child(2),
+    #slide2:checked ~ .slides-arrow label:nth-child(3),
+    #slide3:checked ~ .slides-arrow label:nth-child(1)  {
+    background-size: 50%;
+    }
+    #slide1:checked ~ .slides-arrow label:nth-child(3),
+    #slide2:checked ~ .slides-arrow label:nth-child(1),
+    #slide3:checked ~ .slides-arrow label:nth-child(2)  {
+    background-size: 50%;
+    }
+    #slide1:checked ~ .slides-points label:nth-child(1),
+    #slide2:checked ~ .slides-points label:nth-child(2),
+    #slide3:checked ~ .slides-points label:nth-child(3) {
+    width: 10px;
+    height: 10px;
+}
+}
+@media screen and  (max-width: 820px) {
+    .name {
+        font-size: 0.5em;
+    }
+
+}
+@media screen and  (max-width: 800px) {
+    body {
+        background-repeat: repeat;
+    }
+    .navigation  {
+        display:  inline-flex;
+        flex-flow: row wrap;
+    }
+    .second_navigation {
+        align-items: flex-start;
+    }
+    .search {
+        height: 100%;
+    }
+    .connection img {
+        max-width: 50px;
+    }
+    .slides-points label, .slides-arrow label,
+    #slide1:checked ~ .slides-arrow label:nth-child(2),
+    #slide2:checked ~ .slides-arrow label:nth-child(3),
+    #slide3:checked ~ .slides-arrow label:nth-child(1), 
+    #slide1:checked ~ .slides-arrow label:nth-child(3),
+    #slide2:checked ~ .slides-arrow label:nth-child(1),
+    #slide3:checked ~ .slides-arrow label:nth-child(2), 
+    .red_block p , .product .red_block h3 {
+        display: none;
+    }
+    .pictures {
+        animation: none;
+    }
+    .advantages, .reports, .product {
+        flex-direction: column;
+    }
+    .red_block, .black_block, .white_block {
+        width: 100%;
+    }
+    .red_block h3{
+        margin: 20px 0;  
+        font-size: 1.2em;
+    }
+    .reports .red_block {
+        order: -1;
+    }
+    .products h3 {
+        top: 10px;
+    }
+    .product .red_block img {
+        max-height: 80%;
+    }
+    .product .red_block {
+        max-height: 100%;
+    }
+    .red-box {
+        display: flex;
+        max-width: 100%;
+        background-color: rgba(255, 0, 0, 0.3);
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .red-box h3 {
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .product .red_block, .black-box {
+        background-color: white;
+    }
+}
+@media screen and  (max-width: 750px) {
+    .menu p, .basket p, .compare p, .enter p {
+         display: none;
+    }
+   footer p{
+        font-size: 0.6em;
+   }
+   .menu, .basket, .compare, .enter {
+       margin-bottom: 10px;
+   }
+   
+}
+
+@media screen and  (max-width: 700px) {
+    .footer_info {
+        flex-wrap: wrap;
+    }
+    .info, .contacts, .products, .links {
+        max-width: 100%;
+    }
+    .foot h6 {
+        padding-bottom: 10px;
+    }
+    .second_navigation {
+        display: block;
+    }
+    .search {
+        max-width: 100%;
+        height: 50%;
+    }
+    .networks {
+        margin-top: 10px;
+    }
+}
+@media screen and  (max-width: 600px) {
+    .white_block { 
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+}
+@media screen and  (max-width: 530px) {
+    header.logo, nav, header {
+        display: block;
+    }
+    div.logo, .logo img  {
+        float: left;
+        max-width: 60px;
+        max-height: 60px;
+    }
+    .second_navigation, .navigation {
+        display: flex;
+    }
+    nav {
+        margin: 0;
+    }
+    .search{
+        padding: 0;
+        margin-left: 0;
+        height: 100%;
+    }
+    nav img {
+        max-height: 30px;
+    }
+    .navigation {
+        margin-left: 90px;
+    }
+    .networks {
+        margin-top: 0;
+    }
+    header, .foot {
+        margin: 20px 20px; 
+    }
+    .footer_info {
+    margin-left: 20px;
+    }
+    .advantages .black_block, .reports .black_block{
+      display: block;
+      text-align: center;
+    }
+    .advantages .black_block p, .reports .black_block p {
+        margin: 10px 0;
+        padding:0;
+    }
+    .slider {
+        order:1;
+    }
+    .product {
+        order:2;
+    }
+    .advantages {
+        order: 3
+    }
+    .reports {
+        order:4;
+    }
+}
+@media screen and  (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+    .advantages .black_block img {
+        max-width: 30%;
+    }
+    .advantages .black_block img:first-child {
+        max-width: 50%;
+    }
+    .red-box h3, .red_block h3 {
+        font-size: 1.5em;
+    }
+    .slider, .networks  {
+        display:none;
+    }
+   
+    /* при веведении на значок обратной связи показать све символы соцсетей */
+    .connection img {
+        display: block;
+        cursor: pointer;
+        position: relative;
+    }
+    .networks {
+        background-color: rgba(0,0,0,0.8);
+        min-width: 300px;
+        position: absolute;
+        z-index: 2;
+    }
+    .networks a{
+        display: block;
+    }
+    .connection:hover .networks {
+        display: block;
+    }
+    
+}

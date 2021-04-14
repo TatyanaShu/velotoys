@@ -1,0 +1,33 @@
+.regist {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.individual, .firm {
+    min-height: 50px;
+}
+.individ, .firm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.individ a:hover{
+    text-decoration: none;
+}
+.individ input, .firm input {
+    width: 50%;
+}
+#submit, #cancel, #ok {
+    width: 50%;
+    border: none;
+    color:  white;
+    background: rgba(255,0,0,0.5);
+}
+form:hover, a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,90 @@
+/* .modal.open .modal-overlay, .modal.open .modal-window, .modal.hide .modal-overlay, .modal.hide .modal-window{
+    opacity: 1;
+    z-index: 100;
+}
+.modal-window, .modal-overlay {
+    opacity: 0;
+    z-index: -2;
+} */
+.modal-overlay {
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    transition: background-color .3s ease-in;
+    visibility: hidden;
+}
+.modal.open .modal-overlay {
+    background-color: rgba(0,0,0,0.5);
+    visibility: visible;
+}
+.modal.hide .modal-overlay {
+    background-color: rgba(0,0,0,0);
+    visibility: hidden;
+}
+.modal-window {
+    width: 50%;
+    border-radius: 5px;
+    background-color: black;
+    border: 5px solid red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    transform: translateY(-300px);
+    transition: transform .2s ease-in;
+    visibility: hidden;
+    
+}
+.modal.open .modal-window {
+    transform: translateY(300px);
+    visibility: visible;
+}
+.modal.hide .modal-window {
+    transform: translateY(-2300px);
+    visibility: hidden;
+}
+.modal-close {
+    padding: 5px 10px ;
+    right: 20px;
+    cursor: pointer;
+    justify-content: flex-end;
+    ;
+}
+.modal-window img {
+    width: 20%;
+}
+button, a button, #ok, #cancel {
+       width: 50%;
+       cursor: pointer;
+       background-color: rgba(255,0,0,0.5);
+       border: none;
+       margin: 2px;
+       color: white;
+       width: 50%;
+    border-color: -internal-light-dark(rgb(117, 86, 86), rgb(126, 89, 89));
+    color: -internal-light-dark(black, white);
+    background: rgba(255,0,0,0.5);
+    color: white;
+}
+.modal-window a  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.entered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+label, input {
+    margin: 5px;
+}

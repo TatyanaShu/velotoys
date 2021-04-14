@@ -1,0 +1,153 @@
+
+/* слайдер на ширину окна */
+.slider, .name{
+    width: 100%;
+    /* max-width: 3000px; */
+    position: relative;
+}
+/* .name {
+    z-index: 1;
+    top: 25px;
+    
+} */
+/* ширина окна слайдера */
+.frame {
+    width: 100%;
+    overflow: hidden;
+}
+/* 3 картинки, идут одна за одной, поэтому ширина окна сладера *3 */
+.pictures {
+    width: 300%;
+    /* position: absolute; */
+    display: flex;
+ he
+    /* animation: anime 20s 1;
+    transition: margin-left 5s ease-in-out; */
+}
+/* 3 картинки, поэтому ширина изображений/3 */
+.pictures img, .pictures div {
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    /* position: absolute; */
+}
+.name {
+    position: absolute;
+    top: 8%;
+    z-index: 5;
+    color: white;
+}
+.prev {
+    left: 50px;
+    display: flex;
+    position: absolute;
+    width: 100px;
+    cursor: pointer;
+    top: 50%;
+}
+.next {
+    right: 50px;
+    display: flex;
+    position: absolute;
+    width: 100px;
+    cursor: pointer;
+    top: 50%;
+}
+
+/* анимация  */
+/* @keyFrames anime {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: -100%;
+    } 
+    50% {
+        margin-left: -200%;
+    }
+    80% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+.slides-arrow label, .slides-points, .slides-arrow label:nth-child(n) {
+    align-items: center;
+    justify-content: center;
+   
+} */
+/* точки для переключения слайдов */
+/* .slides-points {
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 20px;
+}
+
+.slides-points label {
+    background-color: rgba(255, 255, 255, .3);
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.slides-points label:hover {
+    background-color: rgba(255, 255, 255, .6);
+}
+.slides-points label:not(:last-child) {
+    margin-right: 10px;
+}
+#slide1:checked ~ .frame .pictures {
+    margin-left:0;
+}
+#slide2:checked ~ .frame .pictures {
+    margin-left: -100%;
+}
+#slide3:checked ~ .frame .pictures {
+    margin-left: -200%;
+}
+#slide1:checked ~ .slides-points label:nth-child(1),
+#slide2:checked ~ .slides-points label:nth-child(2),
+#slide3:checked ~ .slides-points label:nth-child(3) {
+    box-shadow: 0 0 10px 5px rgba(0,0,0, 0.6);
+    background-color: white;
+    width: 20px;
+    height: 20px;
+} */
+/* переключение с помощью стрелок */
+ /* .slides-arrow label {
+    display: none;
+    position: absolute;
+    height:100%;
+    /* область нажатия кнопок */
+     /* top: 0; 
+    bottom: 0;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 300ms ease-out;
+}  */ */
+
+/* левая стрелка */
+/* #slide1:checked ~ .slides-arrow label:nth-child(3),
+#slide2:checked ~ .slides-arrow label:nth-child(1),
+#slide3:checked ~ .slides-arrow label:nth-child(2) {
+    background-image: url(../assets/images/arrow_left.png);
+    left: 0;
+    display: flex;
+} */
+/* правая стрелка */
+/* #slide1:checked ~ .slides-arrow label:nth-child(2),
+#slide2:checked ~ .slides-arrow label:nth-child(3),
+#slide3:checked ~ .slides-arrow label:nth-child(1) {
+    background-image: url(../assets/images/arrow_right.png);
+    right: 0;
+    display: flex;
+} */
+/
+/* тень на блоки стрелох при клике */
+/
